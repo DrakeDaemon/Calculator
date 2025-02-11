@@ -1,13 +1,12 @@
 import time
 
 # Calculator
-
-def calc():
+if __name__ == "__main__":
     while True:
         try:
             print('Simple Calculator. made by JSmile_')
             time.sleep(0.5)
-            inp = int(input('Please enter operation: \n1.Add\n2.Substract\n3.Divide\n4.Multiply\n5.Exit\n'))
+            inp = int(input('Please enter operation: \n1.Add\n2.Subtract\n3.Divide\n4.Multiply\n5.Exit\n'))
             if inp == 5:
                 print('Shutting off.')
                 exit()
@@ -30,7 +29,3 @@ def calc():
         except KeyboardInterrupt:
             print('Shutting off.')
             exit()
-
-# Running
-if __name__ == "__main__":
-    calc()
