@@ -1,19 +1,5 @@
 import time
 
-# Operations
-
-def plus(x,y):
-    return x + y
-
-def minus(x,y):
-    return x - y
-
-def div(x,y):
-    return x / y
-
-def multiply(x,y):
-    return x * y
-
 # Calculator
 
 def calc():
@@ -28,16 +14,16 @@ def calc():
             x = float(input('Enter first number: '))
             y = float(input('Enter second number: '))
             if inp == 1:
-                print(plus(x,y))
+                print(x+y)
                 exit()
             elif inp == 2:
-                print(minus(x,y))
+                print(x-y)
                 exit()
             elif inp == 3:
-                print(div(x,y))
+                print(x/y)
                 exit()
             elif inp == 4:
-                print(multiply(x,y))
+                print(x*y)
                 exit()
         except ValueError:
             print('Invalid data.')
